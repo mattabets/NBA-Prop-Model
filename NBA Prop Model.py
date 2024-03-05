@@ -115,7 +115,7 @@ column_numbers_2_opponent_stats = [6]         # DAST
 column_numbers_3_opponent_stats = [10, 11, 4] # D3PM, DFG%, DPTS
 
 # Specify the file path
-file_path = 'rotowire-NBA-defense-vs-pos (c).csv' # Replace '("")' with players position 
+file_path = 'rotowire-NBA-defense-vs-pos (c5).csv' # Replace '("")' with players position 
 # Read the NBA Opponent Stats CSV file
 opponent_stats_df = pd.read_csv(file_path)
 
@@ -140,7 +140,7 @@ if player_id:
     df = gamelog.get_data_frames()[0]
 
     # Select specific rows 
-    #df = df.head(5)
+    df = df.head(5)
 
     # Drop specific columns
     columns_to_drop = ['SEASON_ID', 'Game_ID', 'WL', 'PLUS_MINUS', 'VIDEO_AVAILABLE', 'Player_ID', 'FTM', 'FT_PCT']
