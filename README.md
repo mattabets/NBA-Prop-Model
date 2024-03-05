@@ -62,13 +62,7 @@ To install and run the provided code on a new computer, follow these instruction
    - Replace 'Chet Holmgren' in the `player_name` variable with the name of the player for whom you want to make predictions.
 
 5. **Run the Python Script:**
-   - Open a terminal or command prompt.
-   - Navigate to the directory containing your Python script and the CSV file.
-   - Run the script using the command:
-
-     ```bash
-     python NBA_Prop_Model.py
-     ```
+   - Run the script.
 
 6. **View the Results:**
    - The script will print predictions for the specified player's name based on hyperparameter-tuned Gradient Boosting models.
