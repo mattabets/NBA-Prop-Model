@@ -19,8 +19,8 @@ pip install pandas nba_api scikit-learn numpy
    - Paste the code into the file.
 
 2. **Download the Opponent Stats CSV File:**
-   - Make sure you have the 'rotowire-NBA-defense-vs-pos (c).csv' file.
-   - Place the CSV file in the same directory as your Python script.
+   - Visit the provided Google Drive link: [DvP CSV Files.](https://drive.google.com/drive/folders/1i_t_nJHFfbDk7cENxkQ3NPwijEy9fzG5?usp=drive_link)
+   - Manually download the necessary CSV files and save them in the same directory as your Python script.
 
 3. **Run the Python Script:**
    - Open a terminal or command prompt.
