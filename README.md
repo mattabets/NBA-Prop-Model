@@ -1,4 +1,4 @@
-# NBA Player Stat Predictor
+# NBA Prop Model
 
 ## Predicting Basketball Player Performance Statistics
 
