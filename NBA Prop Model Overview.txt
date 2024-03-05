@@ -1,0 +1,33 @@
+This code is a Python script that utilizes the NBA API, specifically the nba_api library, and the scikit-learn library to perform hyperparameter tuning for a Gradient Boosting Regressor. The goal is to predict various basketball statistics (Points, Rebounds, Assists, and 3PM - 3-Point Field Goals Made) for a specified player based on their recent game log and the statistics of their opponents.
+
+Here's a breakdown of the code:
+
+1. **Imports**: The necessary libraries are imported, including pandas, nba_api, scikit-learn, numpy, and warnings.
+
+2. **Functions**:
+   - `get_player_id(player_name)`: Takes a player's name and retrieves their ID using the NBA API.
+   - `get_opponent_team(matchup, team_mapping)`: Extracts the opponent team from the given matchup using a mapping dictionary.
+   - `gradient_boosting_tune(X, Y)`: Performs hyperparameter tuning for a Gradient Boosting Regressor using GridSearchCV.
+   - `gradient_boosting_predict(X, Y, input_values, best_model)`: Uses the best model to predict values and calculates mean squared error.
+   - `search_opponent_stats(opponent_stats_df, search_term, column_numbers_list, x_columns_list, y_columns_list)`: Searches opponent stats based on a specified term and returns values for specified columns.
+   - `predict_and_print(df, x_columns, y_columns, input_values, best_model, result_name)`: Uses the Gradient Boosting Regressor to predict values and prints the result.
+
+3. **Hyperparameter Tuning Setup**:
+   - Defines column indices for X (features) and Y (target variables) for different types of statistics.
+   - Sets up column indices for opponent team statistics.
+
+4. **Data Loading and Preparation**:
+   - Loads NBA opponent stats from a CSV file.
+   - Defines a search term for opponent team abbreviation.
+   - Calls `search_opponent_stats` to get values for specified columns.
+
+5. **Player-Specific Predictions**:
+   - Specifies a player's name and retrieves their ID.
+   - Fetches the player's game log for the current season using the NBA API.
+   - Cleans and preprocesses the data, including dropping unnecessary columns, mapping opponent teams, and merging with opponent stats.
+
+6. **Hyperparameter Tuning and Prediction**:
+   - For each type of statistic (Points, Rebounds, Assists, 3PM), performs hyperparameter tuning using `gradient_boosting_tune`.
+   - Uses the best model to predict the values for the specified player and prints the results.
+
+Note: The code assumes that the opponent team abbreviations and the column indices for different statistics are accurate. Also, it performs hyperparameter tuning separately for each type of prediction.
