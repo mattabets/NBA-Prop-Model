@@ -52,7 +52,7 @@ pip install pandas nba_api scikit-learn numpy
    -Specify the correct team abbreviation in the search_term variable, which represents the opponent team for which you want to        retrieve statistics.
    -Line 123
    
-   # Set the search term to the desired team name
+   Set the search term to the desired team name
       search_term = 'CHA'  # Replace with opponent team abbreviation
 
 6. **Specify Player Name:**
