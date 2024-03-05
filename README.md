@@ -23,32 +23,30 @@ pip install pandas nba_api scikit-learn numpy
      
 3. **Adjust File Path and Team Abbreviation:**
    -Replace 'rotowire-NBA-defense-vs-pos (c).csv' with the correct file path pointing to the Defense vs. Position (DvP) data file.
-   -Specify the player's position in the file path. Uncomment the line corresponding to the desired player's position, for example:
-   -Line 118
-   
-   # Specify the file path
-      # file_path = 'rotowire-NBA-defense-vs-pos (c).csv'  # corresponds with "Center" DvP data
-      # file_path = 'rotowire-NBA-defense-vs-pos (PG).csv'  # corresponds with "Point Guard" DvP data
-      # file_path = 'rotowire-NBA-defense-vs-pos (SG).csv'  # corresponds with "Shooting Guard" DvP data
-      # file_path = 'rotowire-NBA-defense-vs-pos (SF).csv'  # corresponds with "Small Forward" DvP data
-      # file_path = 'rotowire-NBA-defense-vs-pos (PF).csv'  # corresponds with "Power Forward" DvP data
+   -Specify the player's position in the file path. 
+   -Line 118:
+
+   Specify the file path
+      file_path = 'rotowire-NBA-defense-vs-pos (c).csv'  # corresponds with "Center" DvP data for Full Season
+      file_path = 'rotowire-NBA-defense-vs-pos (PG).csv'  # corresponds with "Point Guard" DvP data for Full Season
+      file_path = 'rotowire-NBA-defense-vs-pos (SG).csv'  # corresponds with "Shooting Guard" DvP data for Full Season
+      file_path = 'rotowire-NBA-defense-vs-pos (SF).csv'  # corresponds with "Small Forward" DvP data for Full Season
+      file_path = 'rotowire-NBA-defense-vs-pos (PF).csv'  # corresponds with "Power Forward" DvP data for Full Season
 
    -If you are adjusting timeframes, DvP data is available for Last 5 Games, Last 10 Games and Full Season. Update the file path 
     accordingly (See **Note** below):
    
-   # Specify the file path
-      # file_path = 'rotowire-NBA-defense-vs-pos (c10).csv'  # corresponds with "Center" DvP data Last 10 Games
-      # file_path = 'rotowire-NBA-defense-vs-pos (PG10).csv'  # corresponds with "Point Guard" DvP data Last 10 Games
-      # file_path = 'rotowire-NBA-defense-vs-pos (SG10).csv'  # corresponds with "Shooting Guard" DvP data Last 10 Games
-      # file_path = 'rotowire-NBA-defense-vs-pos (SF10).csv'  # corresponds with "Small Forward" DvP data Last 10 Games
-      # file_path = 'rotowire-NBA-defense-vs-pos (PF10).csv'  # corresponds with "Power Forward" DvP data Last 10 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (c10).csv'  # corresponds with "Center" DvP data Last 10 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (PG10).csv'  # corresponds with "Point Guard" DvP data Last 10 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (SG10).csv'  # corresponds with "Shooting Guard" DvP data Last 10 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (SF10).csv'  # corresponds with "Small Forward" DvP data Last 10 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (PF10).csv'  # corresponds with "Power Forward" DvP data Last 10 Games
 
-   # Specify the file path
-      # file_path = 'rotowire-NBA-defense-vs-pos (c5).csv'  # corresponds with "Center" DvP data Last 5 Games
-      # file_path = 'rotowire-NBA-defense-vs-pos (PG5).csv'  # corresponds with "Point Guard" DvP data Last 5 Games
-      # file_path = 'rotowire-NBA-defense-vs-pos (SG5).csv'  # corresponds with "Shooting Guard" DvP data Last 5 Games
-      # file_path = 'rotowire-NBA-defense-vs-pos (SF5).csv'  # corresponds with "Small Forward" DvP data Last 5 Games
-      # file_path = 'rotowire-NBA-defense-vs-pos (PF5).csv'  # corresponds with "Power Forward" DvP data Last 5 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (c5).csv'  # corresponds with "Center" DvP data Last 5 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (PG5).csv'  # corresponds with "Point Guard" DvP data Last 5 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (SG5).csv'  # corresponds with "Shooting Guard" DvP data Last 5 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (SF5).csv'  # corresponds with "Small Forward" DvP data Last 5 Games
+      file_path = 'rotowire-NBA-defense-vs-pos (PF5).csv'  # corresponds with "Power Forward" DvP data Last 5 Games
    
 5. **Update Opponent Abbreviation:**
    -Specify the correct team abbreviation in the search_term variable, which represents the opponent team for which you want to        retrieve statistics.
