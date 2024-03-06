@@ -24,7 +24,7 @@ To install and run the provided code on a new computer, follow these instruction
 
 3. **Adjust File Path and Team Abbreviation:**
    - Replace `'rotowire-NBA-defense-vs-pos (c).csv'` with the correct file path pointing to the Defense vs. Position (DvP) data file.
-   - Specify the player's position in the file path.
+   - Specify the player's position in the file path. Line 118.
 
      ```python
      # Specify the file path
@@ -35,7 +35,7 @@ To install and run the provided code on a new computer, follow these instruction
      file_path = 'rotowire-NBA-defense-vs-pos (PF).csv'  # corresponds with "Power Forward" DvP data for Full Season
      ```
 
-   - Update Opponent Abbreviation:
+   - Update Opponent Abbreviation. Line 123:
 
      ```python
      # Set the search term to the desired team name
@@ -43,7 +43,7 @@ To install and run the provided code on a new computer, follow these instruction
      ```
 
 4. **Specify Player Name:**
-   - Replace 'Chet Holmgren' in the `player_name` variable with the name of the player for whom you want to make predictions.
+   - Replace 'Chet Holmgren' in the `player_name` variable with the name of the player for whom you want to make predictions. Line 132.
 
 5. **Run the Python Script:**
    - Run the script.
